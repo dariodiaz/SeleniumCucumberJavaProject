@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Test different actions on a sandbox page." tests="1" skipped="0" failures="0" errors="0" timestamp="2021-06-25T02:35:55" hostname="dario-asus" time="5.023">
+  <properties/>
+  <testcase name="As a Test Engineer, I try out different actions on a sandbox page." classname="Test different actions on a sandbox page." time="5.023"/>
+  <system-out><![CDATA[?[32m.?[0m?[32m.?[0m]]></system-out>
+  <system-err><![CDATA[Starting ChromeDriver 91.0.4472.101 (af52a90bf87030dd1523486a1cd3ae25c5d76c9b-refs/branch-heads/4472@{#1462}) on port 5628
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Jun 24, 2021 11:35:57 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+</testsuite>
