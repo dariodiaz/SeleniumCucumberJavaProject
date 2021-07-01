@@ -30,6 +30,8 @@ public class BasePage {
             driver = new ChromeDriver();
         }
         wait = new WebDriverWait(driver, 10);
+        // example of implicit wait
+        // driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
     }
 
     public BasePage(WebDriver driver) {
@@ -42,6 +44,7 @@ public class BasePage {
     }
 
     private WebElement Find(String locator) {
+        // we make our explicit wait, implicit by depending of the visibility of the element on the page
         return wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(locator)));
     }
 
