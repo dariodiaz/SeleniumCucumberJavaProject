@@ -110,4 +110,20 @@ public class BasePage {
     // public void validateText(String locator, String textToValidate) {
     //     Assert.assertEquals(textToValidate, Find(locator).getText());
     // }
+
+    public String textFromElement(String locator) {
+        return Find(locator).getText();
+    }
+
+    public boolean elementIsEnabled(String locator) {
+        return Find(locator).isEnabled();
+    }
+
+    public boolean elemenIsDisplayed(String locator) {
+        return Find(locator).isDisplayed();
+    }
+
+    public boolean elemenIsSelected(String locator) {
+        return Find(locator).isSelected();
+    }
 }
