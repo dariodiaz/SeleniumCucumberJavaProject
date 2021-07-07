@@ -119,11 +119,15 @@ public class BasePage {
         return Find(locator).isEnabled();
     }
 
-    public boolean elemenIsDisplayed(String locator) {
+    public boolean elementIsDisplayed(String locator) {
         return Find(locator).isDisplayed();
     }
 
     public boolean elemenIsSelected(String locator) {
         return Find(locator).isSelected();
+    }
+
+    public static void closeDriver() {
+        driver.quit();
     }
 }

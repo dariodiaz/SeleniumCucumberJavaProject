@@ -23,6 +23,6 @@ public class GridTestSteps {
 
     @Then("^I can validate the table is displayed$")
     public void theTableIsThere() {
-        Assert.assertFalse("The element is being displayed", grid.cellStatus());
+        Assert.assertTrue("The element is being displayed", grid.cellStatus());
     }
 }
