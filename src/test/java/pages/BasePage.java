@@ -1,5 +1,7 @@
 package pages;
 
+import java.util.List;
+
 import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -47,6 +49,10 @@ public class BasePage {
     private WebElement Find(String locator) {
         // we make our explicit wait, implicit by depending of the visibility of the element on the page
         return wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(locator)));
+    }
+
+    public List<WebElement> bringMeAllElements(String locator) {
+        return driver.findElements(By.className(locator));
     }
 
     public void clickElement(String locator) {
