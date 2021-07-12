@@ -129,7 +129,7 @@ public class BasePage {
         return Find(locator).isDisplayed();
     }
 
-    public boolean elemenIsSelected(String locator) {
+    public boolean elementIsSelected(String locator) {
         return Find(locator).isSelected();
     }
 

@@ -14,7 +14,7 @@ import pages.BasePage;
     tags = "@Test"
 )
 
-public class runner {
+public class runnerTest {
     @AfterClass
     public static void closeDriver() {
         BasePage.closeDriver();
