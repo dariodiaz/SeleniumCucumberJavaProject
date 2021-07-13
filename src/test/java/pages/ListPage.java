@@ -3,6 +3,7 @@ package pages;
 import java.util.ArrayList;
 import java.util.List;
 
+import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebElement;
 
 public class ListPage extends pages.BasePage {
@@ -18,8 +19,14 @@ public class ListPage extends pages.BasePage {
     }
 
     public void enterSearchCriteria() throws InterruptedException {
-        Thread.sleep(600);
-        write(searchField, "Washington");
+        try {
+            Thread.sleep(600);
+            write(searchField, "Washington");
+        } catch(NoSuchElementException e) {
+            System.out.println("The WebElement Search Field could not be found.");
+            e.printStackTrace();
+        }
+
     }
 
     public List<String> getAllSearchResults() {
