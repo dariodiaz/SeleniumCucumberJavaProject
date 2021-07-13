@@ -17,6 +17,6 @@ import pages.BasePage;
 public class runnerTest {
     @AfterClass
     public static void closeDriver() {
-        BasePage.closeDriver();
+        BasePage.closeBrowser();
     }
 }

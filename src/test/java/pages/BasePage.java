@@ -138,7 +138,7 @@ public class BasePage {
         return Find(locator).isSelected();
     }
 
-    public static void closeDriver() {
+    public static void closeBrowser() {
         driver.quit();
     }
 }
