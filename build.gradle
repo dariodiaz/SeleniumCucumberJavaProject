@@ -18,6 +18,7 @@ dependencies {
     testImplementation 'io.cucumber:cucumber-java:4.2.0'
     testImplementation 'io.cucumber:cucumber-junit:4.2.0'
     implementation group: 'org.slf4j', name: 'slf4j-simple', version: '1.7.25'
+    implementation group: 'com.aventstack', name: 'extentreports-cucumber4-adapter', version: '1.0.7'
 }
 
 test {

@@ -7,3 +7,5 @@ gradlew.bat
 bin
 .gradle
 build
+test-output
+target

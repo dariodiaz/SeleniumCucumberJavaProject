@@ -18,10 +18,10 @@ public class ListPage extends pages.BasePage {
         navigateTo("https://andreidbr.github.io/JS30/06AjaxTypeAhead/index.html");
     }
 
-    public void enterSearchCriteria() throws InterruptedException {
+    public void enterSearchCriteria(String state) throws InterruptedException {
         try {
-            Thread.sleep(600);
-            write(searchField, "Washington");
+            Thread.sleep(700);
+            write(searchField, state);
         } catch(NoSuchElementException e) {
             System.out.println("The WebElement Search Field could not be found.");
             e.printStackTrace();
