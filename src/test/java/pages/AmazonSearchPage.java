@@ -4,11 +4,11 @@ import steps.AmazonSearchSteps;
 
 public class AmazonSearchPage extends BasePage {
 
-    private String searchBox;
-    private String searchButton;
-    private String thirdResult;
-    private String addToCartButton;
-    private String addedMessageText;
+    private String searchBox = "//input[@id='twotabsearchtextbox']";
+    private String searchButton = "//input[@id='nav-search-submit-button']";
+    private String thirdResult = "/html/body/div[1]/div[2]/div[1]/div[1]/div/span[3]/div[2]/div[3]/div/span/div/div/div[2]/div[1]/div/div/span/a/div/img";
+    private String addToCartButton = "//input[@id='add-to-cart-button']";
+    private String addedMessageText = "//*[contains(text(), 'Agregado al carrito')]";
 
     public AmazonSearchPage() {
         super(driver);
@@ -26,8 +26,8 @@ public class AmazonSearchPage extends BasePage {
         clickElement(searchButton);
     }
 
-    public void goToPage2() {
-        goToLinkText("2");
+    public void goToPage(String pageNumber) {
+        goToLinkText(pageNumber);
     }
 
     public void pick3rdItem() {

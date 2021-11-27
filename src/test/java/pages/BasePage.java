@@ -118,6 +118,10 @@ public class BasePage {
         }
     }
 
+    public void goToLinkText(String linkText) {
+        driver.findElement(By.linkText(linkText)).click();
+    }
+
     // public void validateText(String locator, String textToValidate) {
     //     Assert.assertEquals(textToValidate, Find(locator).getText());
     // }
