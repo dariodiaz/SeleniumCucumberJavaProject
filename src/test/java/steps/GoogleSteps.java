@@ -2,7 +2,7 @@ package steps;
 
 import org.junit.Assert;
 
-import cucumber.api.java.en.*;
+import io.cucumber.java.en.*;
 import pages.GooglePage;
 
 public class GoogleSteps {

@@ -1,10 +1,11 @@
 package runner;
 
 import org.junit.AfterClass;
+import io.cucumber.junit.Cucumber;
 import org.junit.runner.RunWith;
+import io.cucumber.junit.CucumberOptions;
 
-import cucumber.api.CucumberOptions;
-import cucumber.api.junit.Cucumber;
+
 import pages.BasePage;
 
 @RunWith(Cucumber.class)
@@ -12,8 +13,8 @@ import pages.BasePage;
     features = "src/test/resources/features",
     glue = "steps",
     monochrome = true,
-    plugin ={"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:", "json:target/cucumber-reports.json"},
-    tags = {"@Cart"}
+    plugin ={"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:", "json:target/cucumber-reports.json"}
+    // tags = {"@Cart"}
 )
 
 public class runnerTest {

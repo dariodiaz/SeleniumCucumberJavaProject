@@ -1,7 +1,6 @@
 package steps;
 
-import cucumber.api.java.en.And;
-import cucumber.api.java.en.Given;
+import io.cucumber.java.en.*;
 import pages.TestSandbox;
 
 public class TestSandboxSteps {
